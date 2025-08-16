@@ -1,0 +1,52 @@
+# ============================
+# Line endings
+# ============================
+* text=auto eol=lf
+
+# ============================
+# Rust sources
+# ============================
+*.rs text diff=rust
+
+# Cargo files
+Cargo.toml text
+Cargo.lock text
+
+# ============================
+# JavaScript / React sources
+# ============================
+*.js  text diff=javascript
+*.jsx text diff=javascript
+*.ts  text diff=javascript
+*.tsx text diff=javascript
+
+# ============================
+# Config / JSON / YAML
+# ============================
+*.json text
+*.yaml text
+*.yml  text
+
+# ============================
+# Markdown / Docs
+# ============================
+*.md   text
+*.toml text
+
+# ============================
+# Binary files
+# ============================
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.wasm binary
+*.contract binary
+
+# ============================
+# GitHub Linguist overrides
+# ============================
+# Tell GitHub to count ink! smart contracts as Rust
+smart-contracts/** linguist-language=Rust
