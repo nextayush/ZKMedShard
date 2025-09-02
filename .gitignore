@@ -1,0 +1,70 @@
+# -------------------------
+# Global
+# -------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+node_modules/
+dist/
+build/
+coverage/
+tmp/
+.cache/
+.idea/
+.vscode/
+*.swp
+
+# -------------------------
+# zk-proofs (Circom + snarkjs)
+# -------------------------
+zk-proofs/artifacts/
+zk-proofs/cache/
+zk-proofs/circuits/*.r1cs
+zk-proofs/circuits/*.wasm
+zk-proofs/circuits/*.sym
+zk-proofs/inputs/witness.wtns
+zk-proofs/inputs/proof.json
+zk-proofs/inputs/public.json
+zk-proofs/ptau/*.ptau
+zk-proofs/*.zkey
+
+# -------------------------
+# smart-contracts (Hardhat)
+# -------------------------
+smart-contracts/artifacts/
+smart-contracts/cache/
+smart-contracts/typechain-types/
+smart-contracts/deployments/
+smart-contracts/coverage/
+smart-contracts/coverage.json
+
+# -------------------------
+# backend (Rust API)
+# -------------------------
+/backend/target/
+/backend/.env
+/backend/Cargo.lock
+
+# -------------------------
+# frontend (Next.js)
+# -------------------------
+/frontend/.next/
+/frontend/out/
+/frontend/node_modules/
+/frontend/.env
+/frontend/.env.local
+
+# -------------------------
+# OS / Editor
+# -------------------------
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
