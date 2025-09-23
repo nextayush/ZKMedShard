@@ -1,0 +1,26 @@
+{
+  "name": "zkmedshard-zk-proofs",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Circom + Groth16 toolchain for ZKMedShard",
+  "scripts": {
+    "compile": "node ./scripts/compile.js",
+    "setup": "node ./scripts/setup.js",
+    "prove": "node ./scripts/prove.js",
+    "verify": "node ./scripts/verify.js",
+    "export:verifier": "node ./scripts/export-verifier.js",
+    "clean": "node ./scripts/clean.js",
+    "full": "npm run compile && npm run setup",
+    "demo": "npm run full && npm run prove && npm run verify",
+    "make:input": "node ./scripts/make-input.js"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.0.8",
+    "snarkjs": "^0.7.5"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}

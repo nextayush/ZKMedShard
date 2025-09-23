@@ -1,0 +1,9 @@
+{
+  "claimId_lo_in": "123",
+  "claimId_hi_in": "0",
+  "cost": "1000",
+  "maxCovered": "1500",
+  "procCode": "42",
+  "allowedProcCode": "42",
+  "salt": "987654321"
+}
